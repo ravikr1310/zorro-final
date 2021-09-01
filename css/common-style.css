@@ -153,10 +153,13 @@ https://www.multidymenson.com/
   }
 .footer-container.home-footer .nav-item .nav-link{
   color: #fff;
-  padding: 5px 50px 20px 0px;
+  padding: 5px 50px 30px 0px;
 }
 .footer-container.home-footer .nav-item .nav-link:hover{
   color: #ff0000;
+}
+.about .footer-menu ul.navbar-nav,.privacy .footer-menu ul.navbar-nav,.faq .footer-menu ul.navbar-nav{
+  float: unset;
 }
   .navbar-brand {
     color: var(--white-color);
@@ -668,8 +671,22 @@ section.express-thoughts-container {
   -----------------------------------------*/
 
 .footer-menu ul.navbar-nav{
-  flex-direction: row;
-  padding-bottom: 19px;
+  display: inline;
+  float: right;
+  /* flex-direction: row;
+  padding-bottom: 19px; */
+}
+.footer-menu .fs-1{
+  display: inline;
+    float: right;
+  list-style: none;
+  padding-left: 0;
+  color: #fff;
+  padding-right: 75px;
+  line-height: 3;
+}
+li.nav-item {
+  display: inline-block;
 }
 .footer-menu p{
   color: var(--white-color);
@@ -1046,11 +1063,11 @@ nav.card-big-logo{
 	        box-shadow: 0 8px 6px -6px #c1c1c1;
 }
 .cards-section .row{
-  display: flex;
+  /* display: flex;
   justify-content: center;
   max-width: 100%;
   padding-left: 120px;
-  padding-right: 120px;
+  padding-right: 120px; */
 }
 .body-content {
   padding: 10px 25px;
@@ -1076,17 +1093,21 @@ nav.card-big-logo{
 .card-social {
   background: #AA4339;
   color: #fff;
-  padding: 20px;
+  padding: 28px;
   border-radius: 12px;
   margin-bottom: 55px;
 }
 .card-social .c1 {
   display: flex;
   align-items: center;
+  font-size: 21px;
 }
 .card-footer-container .footer-social {
   text-align: right;
   color: #fff;
+}
+.card-social li.nav-item:nth-child(1) {
+  padding-right: 18px;
 }
 .card-footer-container h5.fs-mr {
   padding-right: 36px;
@@ -1120,14 +1141,15 @@ nav.card-big-logo{
 }
 .cards-section .container.inner-container {
   max-width: 100%;
-  height: calc(100vh - 484px);
+  /* height: calc(100vh - 484px); */
+  padding: 0 293px;
 }
 .card-view .footer-menu {
-  padding-left: 167px;
+  /* padding-left: 167px; */
 }
 .cards-section .card-social .row {
-  padding-left: 30px;
-  padding-right: 0px;
+  /* padding-left: 30px;
+  padding-right: 0px; */
 }
 
 .container-custom.faq .footer-container .container.inner-container{
@@ -1143,8 +1165,13 @@ nav.card-big-logo{
 }
 
 
-
-
+.footer-menu .fs-1 li{
+  padding-bottom: 20px;
+}
+.card-view .card-social ul.fs-1 {
+  float: right;
+  margin-bottom: 0;
+}
 
 
 
@@ -1178,14 +1205,29 @@ nav.card-big-logo{
       padding-left: 40px;
     }    
     .footer-container.home-footer .nav-item .nav-link {
-      padding: 5px 28px 20px 0px;
+      padding: 5px 26px 20px 0px;
     }
   }
-
+  
   @media only screen and (min-width:375px) and (max-width:812px){
-    
+    .c1 span {
+      font-size: 14px;
+      padding-left: 0px;
+    }
+    /* .chat-status .c1{
+      line-height: 3;
+    } */
+    .card-view .c1 img {
+      width: 25px;
+    }
     img{
       max-width: 100%;
+    }
+    .footer-menu ul.navbar-nav{
+      float: unset;
+    }
+    .footer-menu .fs-1{
+        float: unset;
     }
     .about .about-container {
       padding: 40px 50px;
@@ -1397,8 +1439,9 @@ nav.card-big-logo{
       padding-right: 20px;
     }
     section.footer-container.home-footer {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-top: 40px;
+      padding-right: 40px;
+      padding-left: 40px;
     }
     .app-features-container .container.inner-container .row div:nth-child(2).feature-img{
       padding-left: 16px;
@@ -1414,6 +1457,9 @@ nav.card-big-logo{
     }
     .app-features-container .feature.fr-3{
       max-width: 70%;
+    }
+    .footer-menu .fs-1 li{
+      padding-bottom: 0;
     }
     .express-thoughts-container .container.inner-container{
       padding:0;
@@ -1450,7 +1496,7 @@ nav.card-big-logo{
       max-width: 28vh;
     }
     .footer-container .social-row:nth-child(1){
-      width: 40%;
+      width: 42%;
       display: inline-block;
     }
     .footer-container .social-row:nth-child(1) img:nth-child(1){
@@ -1462,7 +1508,7 @@ nav.card-big-logo{
       padding-right: 0;
     }
     .footer-container .social-row:nth-child(2){
-      width: 58%;
+      width: 56%;
       display: inline-block;
       text-align: right;
     }
@@ -1483,7 +1529,8 @@ nav.card-big-logo{
       width: 10vh;
     } */
     .footer-container .social-row:nth-child(2) a img {
-      max-width: 12vh;
+      max-width: 10vh;
+      padding-right: 0;
    }
    .footer-menu p {
       margin-bottom: 10px;
@@ -1574,29 +1621,39 @@ nav.card-big-logo{
     }
     .chat-status .c1{
       display: inline;
-      padding: 5px;
-       line-height: 4;
+      padding: 10px 13px;
+       line-height: 3;
     }
     .card-social .c1:nth-child(1) {
+      line-height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
       padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 15px;
     }
     .card-social .c1 {
       display: inline;
       line-height: 4;
-  }
+    }
     .card-view .card-social img {
       margin-right: 5px;
       width: 13vh;
     }
+    .card-social li.nav-item:nth-child(1) {
+      padding-right: 0;
+  }
     .card-social {
       padding: 0px 10px;
       border-radius: 12px;
       margin-bottom: 21px;
-  }
+   }
     .cards-section .body-content p {
       padding-left: 10px;
       padding-right: 10px;
-  }
+    }
     .widget-49 .widget-49-meeting-action{
       text-align: center;
     }
@@ -1680,6 +1737,13 @@ nav.card-big-logo{
       padding-right: 25px;
      padding-left: 25px;
     }
+    .card-view .card-social ul.fs-1 {
+      float: unset;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
     
   }
   @media only screen and (min-width:375px) and (max-width:667px){
@@ -1693,13 +1757,12 @@ nav.card-big-logo{
   @media only screen and (min-width: 769px) and (max-width: 1024px)  {
     
 
-  }
- 
+  } 
   
   @media only screen and (min-width: 1201px) and (max-width: 2500px)  {
-    .app-features-container .container.inner-container .row div:nth-child(2).feature-img {
+    /* .app-features-container .container.inner-container .row div:nth-child(2).feature-img {
       padding-left: 139px;
-    }
+    } */
     
   }
   
@@ -1772,10 +1835,14 @@ nav.card-big-logo{
       padding-right: 0;
       padding-left: 0;
     }
+    .footer-menu .fs-1{
+      padding-right: 0;
+    }
   }
   @media screen and (max-width:1200px){
     .cards-section .container.inner-container{
       height: auto;
+      padding: 0 93px;
     }
   }
   @media screen and (min-width:1200px){
@@ -1902,10 +1969,7 @@ nav.card-big-logo{
     .app-features-container .container.inner-container .row div:nth-child(2).feature-img{
       padding-left: 243px;
     }
-  }
-  
-  
- 
+  }   
 
   @media screen and (max-width: 992px) {
 
@@ -1967,7 +2031,332 @@ nav.card-big-logo{
       padding-left: 15px; */
     }
   }
-  
+  @media only screen and (min-width:320px) and (max-width:360px){
+    
+    .app-features-container h1 {
+      font-size: 32px;
+      margin-bottom: 0;
+      top: 0px;
+      line-height: 110px;
+    }
+    .app-features-container .container.inner-container .row div:nth-child(2).feature-img {
+      padding-left: 16px;
+      max-width: 30%;
+      margin-left: 0 !important;
+    }
+    .feature-img.f-img-1 img {
+      max-width: 4vh;
+    }
+    .app-features-container .feature.fr-1 {
+      max-width: 70%;
+      padding: 15px 0 0;
+    }
+    .app-features-container h4 {
+      font-size: 24px;
+      padding-bottom: 24px;
+    }
+    .app-features-container .container p {
+      padding-bottom: 0;
+      font-size: 18px;
+    }
+    .app-features-container .feature-arrow {
+      left: 0;
+      padding-left: 32px;
+      padding-right: 14px;
+    }
+    .app-features-container .feature.fr-2 {
+      right: 0;
+      max-width: 70%;
+      top: 33px;
+    }
+    .app-features-container .inner-container .mid-feature-img {
+      position: unset;
+      left: 0;
+      max-width: 30%;
+      padding-right: 0;
+    }
+    .app-features-container .feature-arrow-1 {
+      right: 0;
+      padding-left: 45px;
+    }
+    .app-features-container .feature.fr-2 {
+      right: 0;
+      max-width: 70%;
+      top: 33px;
+    }
+    .logo-menu-container {
+      padding: 15px 0px 15px 0px;
+    }
+    nav.navbar.main-menu {
+      background-color: #DD4413;
+      background-image: radial-gradient(#E2807F -10%,#AA4339 80%);
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid #96251b;
+    }
+    .big-logo {
+      display: none;
+    }
+    .sl-container {
+      background-color: #fff;
+      border-radius: 100%;
+      padding: 5px;
+      height: 55px;
+      width: 55px;
+      margin: 0 auto;
+    }
+    .navbar-toggler:not(:disabled):not(.disabled) {
+      position: absolute;
+      right: 18px;
+      top: 23px;
+    }
+    div.fordesktop {
+      position: unset;
+      /* display: block; */
+      text-align: left;
+      /* margin-right: 48px; */
+    }
+    .logo-menu-container .navbar-nav {
+      min-width: 100%;
+      padding: 50px;
+     }
+     .main-menu li.nav-item {
+      border-bottom: 1px solid rgb(243 239 239 / 14%);
+      padding-bottom: 0px;
+      padding-top: 29px;
+      }
+      .navbar-expand-lg .navbar-nav .nav-link {
+        color: #fff;
+      }
+      .small-logo {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        line-height: 2;
+      }
+      .zorro.banner-section {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .zorro-mobile-view {
+        background-color: #DD4413;
+        background: url(../images/polygon/Polygon-small1.png) right 4% top 8% no-repeat, url(../images/polygon/Polygon-small2.png) left 73px bottom 42% no-repeat,url(../images/polygon/Polygon-small2.png) right 434px top 0% no-repeat,url(../images/polygon/Polygon-small1.png) right 79px top 69% no-repeat, radial-gradient(#E2807F -239px,#AA4339 77%,#AA4339);
+        vertical-align: middle;
+        min-height: 100vh;
+        background-size: 10vh;
+        background-position: right 33px top 10%, right 86% top 2%, right 246px bottom 19%, left 65% bottom -1%;
+      }
+    .app-features-container .inner-container .row:nth-child(3) {
+      padding: 40px 0 59px;
+    }
+    .banner-section h1.mb-4.pb-2 {
+      padding-top: 30px;
+      padding-bottom: 0px !important;
+      font-size: 4vh;
+    }
+    .banner-section a.btn.btn-default {
+      display: unset;
+      margin-bottom: 31px;
+      padding: 9px 24px;
+      font-size: 18px;
+    }
+    .background-dots {
+      margin-right: 0;
+      background-position: left 64px bottom 248px;
+      padding-right: 15px;
+      text-align: center;
+    }
+    .banner-section img.overlap-mob {
+      max-width: 28vh;
+    }
+    .app-features-container .container.inner-container .row div:nth-child(1).feature-img {
+      display: block;
+      max-width: 30%;
+      padding-left: 0px;
+      text-align: left;
+      position: unset;
+      margin-left: 0px !important;
+    }
+    .app-features-container .feature.fr-3 {
+      max-width: 70%;
+    }
+    .banner-section h1.main-header {
+      font-size: 10vw;
+      line-height: initial;
+    }
+    .banner-section h4.main-header-subtitle {
+      width: 100%;
+      padding: 20px 0 54px;
+      font-size: 18px;
+    }
+    .cards-section .container.inner-container {
+      padding: 0 12px;
+    }
+    /* .zorro, section {
+      padding-right: 0;
+      padding-left: 0;
+    } */
+    section.cards-section {
+      padding-top: 31px;
+    }
+    .body-content {
+      padding: 10px 5px;
+      max-height: 136px;
+      overflow-y: scroll;
+    }
+    .chat-status .c1 {
+      display: inline;
+      padding: 0 0px;
+      line-height: 3;
+      margin: 0;
+      max-width: 67px;
+    }
+    .card-view .c1 img {
+      width: 25px;
+    }
+    .card-social .c1 {
+      font-size: 16px;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: unset;
+    }
+    .card-view .c2 .nav-item img {
+      max-width: 99px;
+    }
+    .card-view .card-social ul.fs-1 {
+      margin: 8px;
+      padding: 0;
+      text-align: center;
+      float: unset;
+    }
+    .footer-container .social-row:nth-child(1) img:nth-child(1) {
+      padding-right: 8px;
+      max-width: 55px;
+    }
+    .footer-container .social-row:nth-child(1) img:nth-child(2) {
+      padding-right: 20px;
+      max-width: 134px;
+    }
+    .express-thoughts-container .inner-container .mob-2, .footer-container .footer-social {
+      right: 0;
+      padding-left: 0;
+      padding-right: 0;
+     }
+    .footer-container .social-row img {
+      padding-right: 8px;
+    }
+    .footer-menu .fs-1 {
+      padding-left: 0;
+      float: left;
+    }
+    .footer-container.home-footer .footer-menu .nav-item .nav-link {
+      padding: 0px 21px 10px 0px;
+      font-size: 2vh;
+    }
+    .footer-menu .fs-1 li{
+      padding-bottom: 0;
+    }
+    .footer-menu ul.navbar-nav {
+      float: left;
+    }
+    .footer-container .social-row:nth-child(1) {
+      width: 100%;
+      display: inline-block;
+    }
+    .footer-container .social-row:nth-child(3) img {
+      padding-right: 0;
+      max-width: 3vh;
+      margin-right: 9px;
+    }
+    .footer-container .footer-menu {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .footer-menu .fs-1 li {
+      padding-bottom: 0;
+      font-size: 2vh;
+  }
+    .app-features-container a.btn.btn-default {
+      padding: 7px 28px;
+      font-size: 16px;
+    }
+    /* .footer-container .social-row:nth-child(1) img:nth-child(1) {
+      width: 5vh;
+      padding-right: 0;
+    }
+    .footer-container .social-row:nth-child(1) img:nth-child(2) {
+      width: 11vh;
+      padding-right: 0;
+    } */
+    .footer-container .social-row:nth-child(2) a img {
+      max-width: 12vh;
+    }
+    .express-thoughts-container .container.inner-container {
+      padding: 0;
+    }
+    .express-thoughts-container .exp-th-con {
+      max-width: 56%;
+      padding-left: 0;
+    }
+    .express-thoughts-container .inner-container h1 {
+      padding-top: 0;
+      margin-bottom: 0 !important;
+      font-size: 2.2vh;
+    }
+    .express-thoughts-container .inner-container h5 {
+      padding-bottom: 0;
+      font-size: 2vh;
+      color: #000;
+    }
+    img {
+      max-width: 100%;
+    }
+    .social-icon {
+      padding-right: 58px;
+    }
+    .express-thoughts-container .inner-container .mob-1 {
+      text-align: center;
+      padding-top: 0;
+      margin-top: 0;
+      padding-left: 0;
+      padding-right: 10px;
+      max-width: 22%;
+    }
+    .express-thoughts-container .inner-container .mob-2 {
+      max-width: 22%;
+      padding-right: 0;
+      padding-left: 10px;
+      margin-top: 134px;
+      right:0;
+    }
+    .footer-container .container.inner-container {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 36px;
+    }
+    .footer-container .social-row {
+      padding-bottom: 20px;
+    }
+    .footer-container .social-row:nth-child(1) img:nth-child(1) {
+      width: 5vh;
+      padding-right: 0;
+    }
+    .footer-container .social-row:nth-child(1) img:nth-child(2) {
+      width: 11vh;
+      padding-right: 0;
+    }
+    .footer-container .social-row:nth-child(1) {
+      width: 42%;
+      display: inline-block;
+    }
+    .footer-container .social-row:nth-child(2) {
+      width: 56%;
+      display: inline-block;
+      text-align: right;
+    }
+  }
   
   
  
