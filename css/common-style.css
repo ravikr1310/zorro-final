@@ -310,8 +310,10 @@ div.fordesktop {
     background-image: url(../images/banner/dots.png), url(../images/polygon/Polygon-small2.png), url(../images/polygon/Polygon-small1.png),radial-gradient(#E2807F -205px,#AA4339 134%,#AA4339);
     vertical-align: middle;
     background-repeat: no-repeat,no-repeat,no-repeat, repeat-x;
-    background-position: right 10% top 38%, left 163px top 18%,right 621px bottom 53%;
-    min-height: 56vh;
+    background-position: right 13% top 16%, left 196px top -14%,left 797px bottom 63%;
+    /* min-height: 56vh; */
+    padding-top: 100px;
+    padding-bottom: 202px;
   }
   .about-header h1.main-header {
     font-size: 82px;
@@ -336,8 +338,12 @@ div.fordesktop {
     position: unset;
 }
 .about .about-container .ac {
-  margin: 0 auto;
-  padding-left: 316px;
+  /* margin: 0 auto;
+  padding-left: 316px; */
+}
+.about .footer-container .footer-menu {
+  padding-left: 0;
+  left: -12px;
 }
 .container-custom.about .container.inner-container{
   max-width: 100%;
@@ -1172,7 +1178,12 @@ nav.card-big-logo{
   float: right;
   margin-bottom: 0;
 }
-
+/* .about .zorro, .about section {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 100px;
+  padding-bottom: 193px;
+} */
 
 
   /*---------------------------------------
@@ -1261,9 +1272,9 @@ nav.card-big-logo{
       max-width: 100%;
       padding: 10px 0;
     }
-    .footer-container .container.inner-container{
+    /* .footer-container .container.inner-container{
       padding: 35px 0px;
-    }
+    } */
     .app-features-container h1 {
       font-size: 32px;
       margin-bottom: 0;
@@ -1440,8 +1451,8 @@ nav.card-big-logo{
     }
     section.footer-container.home-footer {
       padding-top: 40px;
-      padding-right: 40px;
-      padding-left: 40px;
+      padding-right: 20px;
+      padding-left: 20px;
     }
     .app-features-container .container.inner-container .row div:nth-child(2).feature-img{
       padding-left: 16px;
@@ -1545,9 +1556,9 @@ nav.card-big-logo{
     }
     /* about responsive */
     .about section.zorro.about-header {
-      background-size: 20% 51%, 10% 30%, auto !important;
+      background-size: 16% 42%, 10% 29%, auto !important;
       min-height: auto;
-      padding: 0 50px;
+      padding: 0 35px;
     }
     /* .zorro, section{
       padding-right: 0;
@@ -1575,15 +1586,16 @@ nav.card-big-logo{
       display: flex;
       justify-content: center;
       align-items: center;
+      left:0
     }
     /* .about .footer-menu ul.navbar-nav {
       position: absolute;
       right: 15px;
     } */
-    .about .zorro, .about section {
+    /* .about .zorro, .about section {
       padding-right: 0;
       padding-left: 0;
-    }
+    } */
     /* .faq .zorro, .faq section{
       padding-right: 0;
       padding-left: 0;
@@ -1820,6 +1832,8 @@ nav.card-big-logo{
       background-position: right 10% top 38%, left 72px top 6%;
       background-size: 14% 51%, 10% 41%, auto;
       min-height: auto;
+      padding-top: 88px;
+      padding-bottom: 70px;
     }
     .about-header h1.main-header {
       font-size: 6vh;
@@ -1837,6 +1851,10 @@ nav.card-big-logo{
     }
     .footer-menu .fs-1{
       padding-right: 0;
+    }
+    .zorro, section {
+      padding-right: 40px;
+      padding-left: 40px;
     }
   }
   @media screen and (max-width:1200px){
@@ -1856,6 +1874,8 @@ nav.card-big-logo{
     .about .zorro, .about section {
       padding-right: 0;
       padding-left: 0;
+      /* padding-top: 100px;
+      padding-bottom: 193px; */
     }
     /* .about .a-head {
       margin-left: 58px !important;
@@ -1942,6 +1962,7 @@ nav.card-big-logo{
     /* about responsive */
     .zorro.about-header{
       min-height: auto;
+      background-size: 17% 40%, 10% 26%, auto;
     }
     .about .about-header .a-head {
       margin: 0 auto;
@@ -2199,6 +2220,8 @@ nav.card-big-logo{
     } */
     section.cards-section {
       padding-top: 31px;
+      padding-left: 0;
+      padding-right: 0;
     }
     .body-content {
       padding: 10px 5px;
@@ -2291,7 +2314,7 @@ nav.card-big-logo{
       padding-right: 0;
     } */
     .footer-container .social-row:nth-child(2) a img {
-      max-width: 12vh;
+      max-width: 8vh;
     }
     .express-thoughts-container .container.inner-container {
       padding: 0;
@@ -2331,17 +2354,16 @@ nav.card-big-logo{
       margin-top: 134px;
       right:0;
     }
-    .footer-container .container.inner-container {
+    /* .footer-container .container.inner-container {
       padding-left: 0;
       padding-right: 0;
       padding-top: 36px;
-    }
+    } */
     .footer-container .social-row {
       padding-bottom: 20px;
     }
     .footer-container .social-row:nth-child(1) img:nth-child(1) {
-      width: 5vh;
-      padding-right: 0;
+      max-width: 12vh;
     }
     .footer-container .social-row:nth-child(1) img:nth-child(2) {
       width: 11vh;
@@ -2355,6 +2377,172 @@ nav.card-big-logo{
       width: 56%;
       display: inline-block;
       text-align: right;
+    }
+    .zorro.about-header {
+      background-position: right 10% top 12%, left 68px top 8%;
+      background-size: 16% 31%, 11% 22%, auto;
+      padding-top: 2px;
+      padding-bottom: 16px;
+    }
+    .faq .footer-container .container.inner-container {
+      /* padding: 35px 0px; */
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid #c1c1c1;
+    }
+    .privacy .footer-container .container.inner-container {
+      /* padding: 35px 0px; */
+      background: #fff;
+      display: flex;
+      justify-content: center;
+    }
+    .faq .footer-container .social-row:nth-child(1) img:nth-child(1),.privacy .footer-container .social-row:nth-child(1) img:nth-child(1) {
+      width: 14vh;
+      padding-right: 0;
+    }
+    .faq .footer-container .social-row:nth-child(2) a img,.privacy .footer-container .social-row:nth-child(2) a img {
+      max-width: 14vh;
+      padding-right: 0;
+    }
+    .faq .footer-container .social-row:nth-child(2),.privacy .footer-container .social-row:nth-child(2) {
+      width: auto;
+      display: inline-block;
+    }
+    .faq .footer-container .social-row:nth-child(1),.privacy .footer-container .social-row:nth-child(1) {
+      width: auto;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .faq .footer-container .footer-social, .privacy .footer-container .footer-social  {
+      display: flex;
+      justify-content: center;
+    }
+    .faq .footer-container .footer-menu,.privacy .footer-container .footer-menu {
+      display: flex;
+      justify-content: center;
+    }
+    .faq section.footer-container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .faq .footer-container .social-row:nth-child(1) img:nth-child(1), .privacy .footer-container .social-row:nth-child(1) img:nth-child(1) {
+      max-width: 14vh;
+      padding-right: 0;
+    }
+    .faq .zorro.privacy-header {
+      min-height: 0;
+      display: none !important;
+    }
+    .faq .footer-container .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .privacy .footer-container .container.inner-container {
+      /* padding: 35px 0px; */
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid #c1c1c1;
+    }
+    .privacy .footer-container .social-row:nth-child(1) img:nth-child(1),.privacy .footer-container .social-row:nth-child(1) img:nth-child(1) {
+      width: 14vh;
+      padding-right: 0;
+    }
+    .privacy .footer-container .social-row:nth-child(2) a img,.privacy .footer-container .social-row:nth-child(2) a img {
+      max-width: 14vh;
+      padding-right: 0;
+    }
+    .privacy .footer-container .social-row:nth-child(2),.privacy .footer-container .social-row:nth-child(2) {
+      width: auto;
+      display: inline-block;
+    }
+    .privacy .footer-container .social-row:nth-child(1),.privacy .footer-container .social-row:nth-child(1) {
+      width: auto;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .privacy .footer-container .footer-social, .privacy .footer-container .footer-social  {
+      display: flex;
+      justify-content: center;
+    }
+    .privacy .footer-container .footer-menu,.privacy .footer-container .footer-menu {
+      display: flex;
+      justify-content: center;
+    }
+    .privacy section.footer-container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .privacy .footer-container .social-row:nth-child(1) img:nth-child(1), .privacy .footer-container .social-row:nth-child(1) img:nth-child(1) {
+      max-width: 14vh;
+      padding-right: 0;
+    }
+    .privacy .zorro.privacy-header {
+      min-height: 0;
+      display: none !important;
+    }
+    .privacy .footer-container .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .privacy-sub-head {
+      font-size: 32px;
+    }
+
+    /* about us*/
+    .about .about-container {
+      padding: 40px 50px;
+    }
+    /* .container-custom .container.inner-container {
+      max-width: 100%;
+      padding: 10px 0;
+    } */
+    .about .about-container .ac {
+      padding-right: 0;
+      /* padding-left: initial; */
+    }
+    .about-header h1.main-header {
+      padding-left: 41px;
+    }
+    .about .footer-container .social-row:nth-child(1) {
+      width: auto;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .about .footer-container .social-row:nth-child(2) {
+      width: auto;
+      display: inline-block;
+      text-align: right;
+    }
+    /* .about .zorro, .about section {
+      padding-right: 0;
+      padding-left: 0;
+    } */
+    .about .footer-container .footer-menu{
+      left:0;
+      display: flex;
+      justify-content: center;
+    }
+    /* .about .footer-container .row {
+      margin-right: 40px;
+      margin-left: 40px;
+    } */
+    .about-header .container.inner-container .row {
+      margin-right: 0;
+      margin-left: -15px;
+    }
+    .footer-container .social-row:nth-child(1) img:nth-child(1) {
+      width: 4vh;
+      padding-right: 0;
+    }
+    .footer-container .social-row:nth-child(1) img:nth-child(2) {
+      width: 10vh;
+      padding-right: 0;
+    }
+   .l-page section.footer-container.home-footer {
+    padding-left: 25px;
+    padding-right: 25px;
     }
   }
   
